@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+.urbanist-light {
+	font-family: 'Urbanist', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.urbanist-regular {
+	font-family: 'Urbanist', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.urbanist-bold {
+	font-family: 'Urbanist', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.urbanist-light-italic {
+	font-family: 'Urbanist', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.urbanist-regular-italic {
+	font-family: 'Urbanist', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.urbanist-bold-italic {
+	font-family: 'Urbanist', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: italic;
+}
+
+body,
+html {
+	font-family: 'Urbanist', sans-serif;
+	font-optical-sizing: auto;
+	@apply bg-gray-950 text-gray-100;
+	margin: 0;
+}
+
+/* Custom scrollbar fallback for WebKit */
+.custom-scrollbar::-webkit-scrollbar {
+	width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+	@apply bg-gray-900;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	@apply rounded bg-gray-700;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+	@apply bg-gray-600;
+}
+
+.html-node {
+		@apply bg-gray-900 text-gray-100;
+
+		width: 100px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 4px;
+		font-weight: bold;
+		pointer-events: none; /* let drag pass through foreignObject */
+		transition: transform 0.5s; /* smooth layout transitions */
+	}
